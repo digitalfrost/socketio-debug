@@ -20,14 +20,15 @@
       var i = 0;
       socket.on('connect', function(){
         socket.emit('authentication', {username: "John", password: "secret"});
-      socket.on('authenticated', function() {
+        socket.on('authenticated', function() {
           console.log("I've been authenticated " + (++i) + " times");
-          // use the socket as usual
-          socket.on('message', function(msg){
-            console.log(msg);
-          });
         });
       });
+
+       //Should only receive messages if authenticated
+       socket.on('message', function(msg){
+            console.log(msg);
+       });
   </script>
   </body>
 </html>
