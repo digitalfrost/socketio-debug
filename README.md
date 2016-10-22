@@ -107,3 +107,5 @@ socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t
 (index):24 I've been authenticated 10 times
 10(index):27 Test message
 ```
+
+### socketio-auth-fix branch - Modifications to app that fix the problem
