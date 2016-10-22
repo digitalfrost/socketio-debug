@@ -17,10 +17,11 @@
     <script src="/socket.io/socket.io.js"></script>
   <script>
       var socket = io();
-
+      var i = 0;
       socket.on('connect', function(){
         socket.emit('authentication', {username: "John", password: "secret"});
-        socket.on('authenticated', function() {
+      socket.on('authenticated', function() {
+          console.log("I've been authenticated " + (++i) + " times");
           // use the socket as usual
           socket.on('message', function(msg){
             console.log(msg);
