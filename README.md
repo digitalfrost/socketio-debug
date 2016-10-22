@@ -1,4 +1,4 @@
-## Demonstratring multiple web sockets after server restart with Socket.io
+## App to debug multiple web sockets after server restart with Socket.io
 
 ### Master Branch Socket.io only
 
