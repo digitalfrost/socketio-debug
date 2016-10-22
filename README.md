@@ -87,12 +87,23 @@ Browser  log output
 Test message being sent multiple times to client after reconnect
 
 ```
-Test message
-socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LViwRTN net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
-3(index):26 Test message
-socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LViwgeE net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
-socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LViwh0V net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
-6(index):26 Test message
-socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LViwuLQ net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
-10(index):26 Test message
+I've been authenticated 1 times
+(index):27 Test message
+http://localhost:3000/favicon.ico Failed to load resource: the server responded with a status of 404 (Not Found)
+socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LVjLAzO net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
+(index):24 I've been authenticated 2 times
+(index):24 I've been authenticated 3 times
+3(index):27 Test message
+socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LVjLKcg net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
+socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LVjLKy6 net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
+(index):24 I've been authenticated 4 times
+(index):24 I've been authenticated 5 times
+(index):24 I've been authenticated 6 times
+6(index):27 Test message
+socket.io.js:4194 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LVjLPCY net::ERR_CONNECTION_REFUSEDRequest.create @ socket.io.js:4194Request @ socket.io.js:4107XHR.request @ socket.io.js:4035XHR.doPoll @ socket.io.js:4065Polling.poll @ socket.io.js:4482Polling.doOpen @ socket.io.js:4426Transport.open @ socket.io.js:4694Socket.open @ socket.io.js:3314Socket @ socket.io.js:3195Socket @ socket.io.js:3121Manager.open.Manager.connect @ socket.io.js:2708(anonymous function) @ socket.io.js:3022
+(index):24 I've been authenticated 7 times
+(index):24 I've been authenticated 8 times
+(index):24 I've been authenticated 9 times
+(index):24 I've been authenticated 10 times
+10(index):27 Test message
 ```
