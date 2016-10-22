@@ -84,7 +84,7 @@ post Authenticate called
 
 Browser  log output
 
-Test message being sent multiple time to client after reconnect
+Test message being sent multiple times to client after reconnect
 
 ```
 Test message
