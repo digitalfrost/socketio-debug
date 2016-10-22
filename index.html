@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO Debug</title>
+  </head>
+  <body>
+    <h2>Demonstrate multiple  web sockets after server restarts</h2>
+    <ol>
+      <li>Open Developer Tools</li>
+      <li>Go to Network, WS (Web Socket tab)</li>
+      <li>Reload the page to see detailed information about network activity</li>
+      <li>Note that one web socket is listed</li>
+      <li>Stop and restart the server</li>
+      <li>There is now a second web socket</li>
+      <li>Perform multiple server restarts, see web sockets accumulate</li>
+     </ol>
+    <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+     socket.on('message', function(msg){
+        console.log(msg);
+      });
+  </script>
+  </body>
+</html>

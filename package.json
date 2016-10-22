@@ -1,0 +1,18 @@
+{
+  "name": "socketio-debug",
+  "version": "1.0.0",
+  "description": "Troubleshoot Double Web Socket Bug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "debug"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socketio": "^1.0.0"
+  }
+}
