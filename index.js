@@ -1,7 +1,33 @@
-//Server code from http://socket.io/get-started/chat/
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+
+
+require('socketio-auth')(io, {
+    authenticate: authenticate,
+    postAuthenticate: postAuthenticate,
+    timeout: 1000
+});
+
+
+function authenticate(socket, data, callback) {
+
+    console.log("authenticate called");
+    console.log("Socket: "+ socket.id);
+
+   //assume client sent correct credentials and authenticate...
+   return callback(null, data);
+
+}
+
+function postAuthenticate(socket, data) {
+
+    console.log("post Authenticate called");
+    io.to(socket.id).emit('message', 'Test message');
+
+}
+
+
 
 app.get('/', function(req, res){
     res.sendfile('index.html');

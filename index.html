@@ -17,8 +17,15 @@
     <script src="/socket.io/socket.io.js"></script>
   <script>
       var socket = io();
-      socket.on('message', function(msg){
-        console.log(msg);
+
+      socket.on('connect', function(){
+        socket.emit('authentication', {username: "John", password: "secret"});
+        socket.on('authenticated', function() {
+          // use the socket as usual
+          socket.on('message', function(msg){
+            console.log(msg);
+          });
+        });
       });
   </script>
   </body>
